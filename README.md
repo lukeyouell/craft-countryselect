@@ -1,3 +1,5 @@
+<img src="src/icon.svg" alt="icon" width="100" height="100">
+
 # Country Select plugin for Craft CMS 3.x
 
 Country select field type.

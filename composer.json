@@ -1,0 +1,40 @@
+{
+    "name": "lukeyouell/craft-countryselect",
+    "description": "Country select field type.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "country select"
+    ],
+    "support": {
+        "docs": "https://github.com/lukeyouell/craft-countryselect/country-select/blob/v1/README.md",
+        "issues": "https://github.com/lukeyouell/craft-countryselect/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Youell",
+            "homepage": "https://github.com/lukeyouell"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC11"
+    },
+    "autoload": {
+        "psr-4": {
+          "lukeyouell\\countryselect\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Country Select",
+        "handle": "country-select",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/lukeyouell/craft-countryselect/v1/CHANGELOG.md",
+        "class": "lukeyouell\\countryselect\\CountrySelect"
+    }
+}

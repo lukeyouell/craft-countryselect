@@ -1,0 +1,23 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Country Select plugin for Craft CMS 3.x
+ *
+ * Country Select Field Input
+ *
+ * @author    Luke Youell
+ * @copyright Copyright (c) 2018 Luke Youell
+ * @link      https://github.com/lukeyouell
+ * @package   CountrySelect
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.selectField({
+    id: name,
+    name: name,
+    options: options,
+    value: value
+}) }}

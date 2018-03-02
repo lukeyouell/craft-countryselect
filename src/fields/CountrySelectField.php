@@ -73,7 +73,9 @@ class CountrySelectField extends Field
      */
     public function normalizeValue($value, ElementInterface $element = null)
     {
-        $value = Json::decodeIfJson($value);
+        if (is_string($value)) {
+            $value = Json::decodeIfJson($value);
+        }
 
         // Normalize to an array
         $selectedValues = (array) $value;

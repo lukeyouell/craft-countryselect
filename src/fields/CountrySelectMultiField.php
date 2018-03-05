@@ -21,16 +21,8 @@ use craft\base\Field;
  * @package   CountrySelect
  * @since     1.0.0
  */
-class CountrySelectField extends CountrySelectBaseOptionsField
+class CountrySelectMultiField extends CountrySelectBaseOptionsField
 {
-    // Properties
-    // =========================================================================
-
-    /**
-     * @var array|null The available options
-     */
-    public $options;
-
     // Static Methods
     // =========================================================================
 
@@ -39,11 +31,20 @@ class CountrySelectField extends CountrySelectBaseOptionsField
      */
     public static function displayName(): string
     {
-        return Craft::t('country-select', 'Country Select');
+        return Craft::t('country-select', 'Country Multi-select');
     }
 
     // Public Methods
     // =========================================================================
+
+    /**
+     * @inheritdoc
+     */
+    public function init()
+    {
+        parent::init();
+        $this->multi = true;
+    }
 
     /**
      * @inheritdoc
@@ -56,14 +57,14 @@ class CountrySelectField extends CountrySelectBaseOptionsField
 
         // Render the input template
         return Craft::$app->getView()->renderTemplate(
-            'country-select/_select',
+            'country-select/_multiselect',
             [
                 'name' => $this->handle,
-                'value' => $value,
+                'values' => $value,
                 'field' => $this,
                 'id' => $id,
                 'namespacedId' => $namespacedId,
-                'options' => $this->options,
+                'options' => $this->translatedOptions(),
             ]
         );
     }

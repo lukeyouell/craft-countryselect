@@ -11,6 +11,7 @@
 namespace lukeyouell\countryselect;
 
 use lukeyouell\countryselect\fields\CountrySelectField as CountrySelectField;
+use lukeyouell\countryselect\fields\CountrySelectMultiField as CountrySelectMultiField;
 
 use Craft;
 use craft\base\Plugin;
@@ -63,6 +64,7 @@ class CountrySelect extends Plugin
             Fields::EVENT_REGISTER_FIELD_TYPES,
             function (RegisterComponentTypesEvent $event) {
                 $event->types[] = CountrySelectField::class;
+                $event->types[] = CountrySelectMultiField::class;
             }
         );
 

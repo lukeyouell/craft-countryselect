@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+### Added
+- Multi-select field
+
 ### Fixed
 - Incorrect documentation url in `composer.json`
 

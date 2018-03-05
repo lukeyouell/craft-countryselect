@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Fixed
+- Incorrect documentation url in `composer.json`
+
 ## 1.0.1 - 2018-03-02
 
 ### Fixed

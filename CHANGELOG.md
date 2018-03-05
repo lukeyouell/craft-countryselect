@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 ## 1.1.0 - 2018-03-05
 
 ### Added
-- Multi-select field
+- Multi-select field ([#2](https://github.com/lukeyouell/craft-countryselect/issues/2))
 
 ### Fixed
 - Incorrect documentation url in `composer.json`

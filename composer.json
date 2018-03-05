@@ -11,7 +11,7 @@
         "country select"
     ],
     "support": {
-        "docs": "https://github.com/lukeyouell/craft-countryselect/country-select/blob/v1/README.md",
+        "docs": "https://github.com/lukeyouell/craft-countryselect/blob/v1/README.md",
         "issues": "https://github.com/lukeyouell/craft-countryselect/issues"
     },
     "license": "MIT",

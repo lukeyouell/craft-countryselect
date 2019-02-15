@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## Unreleased
+
+### Changed
+- Country Select now works _with_ core functionality rather than replicating existing behaviour. Existing field types are pre-populated with country data.
+
+### Added
+- Checkboxes field
+- Radio buttons field
+
 ## 1.1.2 - 2018-03-16
 
 ### Changed
